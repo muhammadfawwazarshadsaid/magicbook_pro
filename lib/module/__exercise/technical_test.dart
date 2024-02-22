@@ -5,7 +5,6 @@ class TechnicalTest {
   List list = [
     // Exercise 1
     () {
-      return true;
       // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data int dan beri nilai 10
       // >>> Tulis jawabanmu di bawah ini
       int output = 3;
@@ -15,7 +14,6 @@ class TechnicalTest {
     },
     // Exercise 2
     () {
-      return true;
       // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data int dan beri nilai 42
       // >>> Tulis jawabanmu di bawah ini
 
@@ -25,7 +23,6 @@ class TechnicalTest {
     },
     // Exercise 3
     () {
-      return true;
       // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data int dan beri nilai -7
       // >>> Tulis jawabanmu di bawah ini
 
