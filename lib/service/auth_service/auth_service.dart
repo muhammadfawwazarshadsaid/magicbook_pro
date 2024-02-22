@@ -1,4 +1,3 @@
-import 'package:dio/dio.dart';
 import 'package:hyper_ui/core.dart';
 
 class AuthService {
@@ -43,7 +42,8 @@ class AuthService {
       };
 
       var url = "https://9code.id/api/mobile/update";
-      await Dio().post(
+      // var url = "http://localhost:8000/api/mobile/update";
+      var res = await Dio().post(
         url,
         options: Options(
           headers: {
@@ -52,6 +52,7 @@ class AuthService {
         ),
         data: data,
       );
+      printo(res.toString());
     } on Exception catch (err) {
       throw Exception(err);
     }

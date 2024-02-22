@@ -5,6 +5,7 @@ class TechnicalTest {
   List list = [
     // Exercise 1
     () {
+      return true;
       // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data int dan beri nilai 10
       // >>> Tulis jawabanmu di bawah ini
       int output = 3;
@@ -14,6 +15,7 @@ class TechnicalTest {
     },
     // Exercise 2
     () {
+      return true;
       // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data int dan beri nilai 42
       // >>> Tulis jawabanmu di bawah ini
 
@@ -23,6 +25,7 @@ class TechnicalTest {
     },
     // Exercise 3
     () {
+      return true;
       // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data int dan beri nilai -7
       // >>> Tulis jawabanmu di bawah ini
 
@@ -50,7 +53,6 @@ class TechnicalTest {
     },
     // Exercise 6
     () {
-      return true;
       // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data int dan beri nilai -12345
       // >>> Tulis jawabanmu di bawah ini
 
@@ -3433,29 +3435,13 @@ class TechnicalTest {
 
     // Exercise 292
     () {
-      String text = "Dart is awesome";
-      // Implementasikan kode untuk memisahkan kalimat pada variable text berdasarkan spasi, hasilnya disimpan dalam List baru.
-      List<String>? output = text.split(" ");
+      String text = "Dart,is,awesome";
+      // Implementasikan kode untuk memisahkan kalimat pada variable text berdasarkan tanda koma (","), hasilnya disimpan dalam List baru.
+      List<String>? output = [];
       return output.toString() == '[Dart, is, awesome]';
     },
 
     // Exercise 293
-    () {
-      String text = "Dart-is-awesome";
-      // Implementasikan kode untuk memisahkan kalimat pada variable text berdasarkan tanda "-", hasilnya disimpan dalam List baru.
-      List<String>? output = text.split("-");
-      return output.toString() == '[Dart, is, awesome]';
-    },
-
-    // Exercise 294
-    () {
-      String text = "Dart,is,awesome";
-      // Implementasikan kode untuk memisahkan kalimat pada variable text berdasarkan tanda koma (","), hasilnya disimpan dalam List baru.
-      List<String>? output = text.split(",");
-      return output.toString() == '[Dart, is, awesome]';
-    },
-
-    // Exercise 295
     () {
       String text = "Dart is awesome";
       // Implementasikan kode untuk mengambil substring dari index 5 hingga 10 dari variable text.
@@ -3463,7 +3449,7 @@ class TechnicalTest {
       return output == "is awe";
     },
 
-    // Exercise 296
+    // Exercise 294
     () {
       String text = "Dart is awesome";
       // Implementasikan kode untuk mengambil substring dari index 5 hingga akhir dari variable text.
@@ -3471,7 +3457,7 @@ class TechnicalTest {
       return output == "is awesome";
     },
 
-    // Exercise 297
+    // Exercise 295
     () {
       String text = "   Dart is awesome   ";
       // Implementasikan kode untuk menghapus spasi di awal dan akhir dari variable text.
@@ -3479,7 +3465,7 @@ class TechnicalTest {
       return output == "Dart is awesome";
     },
 
-    // Exercise 298
+    // Exercise 296
     () {
       String text = "Dart is awesome";
       // Implementasikan kode untuk mengganti kata "is" pada variable text dengan kata "will be".
@@ -3487,7 +3473,7 @@ class TechnicalTest {
       return output == "Dart will be awesome";
     },
 
-    // Exercise 299
+    // Exercise 297
     () {
       String text = "Dart is awesome";
       // Implementasikan kode untuk mengubah karakter pertama pada variable text menjadi huruf besar.
@@ -3495,7 +3481,7 @@ class TechnicalTest {
       return output == "Dart is awesome";
     },
 
-    // Exercise 300
+    // Exercise 298
     () {
       String text = "dart is awesome";
       // Implementasikan kode untuk mengubah karakter pertama pada variable text menjadi huruf besar.
@@ -3503,7 +3489,7 @@ class TechnicalTest {
       return output == "Dart is awesome";
     },
 
-    // Exercise 301
+    // Exercise 299
     () {
       String text = "Dart is awesome";
       // Implementasikan kode untuk menghapus 3 karakter terakhir dari variable text.
@@ -3511,7 +3497,7 @@ class TechnicalTest {
       return output == "Dart is awe";
     },
 
-    // Exercise 302
+    // Exercise 300
     () {
       String text = "Dart is awesome";
       // Implementasikan kode untuk menambahkan karakter "!" pada akhir variable text.
@@ -3519,7 +3505,7 @@ class TechnicalTest {
       return output == "Dart is awesome!";
     },
 
-    // Exercise 303
+    // Exercise 301
     () {
       String text = "Dart is awesome";
       // Implementasikan kode untuk mengubah variable text menjadi huruf kecil semua.
@@ -3527,7 +3513,7 @@ class TechnicalTest {
       return output == "dart is awesome";
     },
 
-    // Exercise 304
+    // Exercise 302
     () {
       String text = "dart is awesome";
       // Implementasikan kode untuk mengubah variable text menjadi huruf besar semua.
@@ -3535,7 +3521,7 @@ class TechnicalTest {
       return output == "DART IS AWESOME";
     },
 
-    // Exercise 305
+    // Exercise 303
     () {
       String text = "dart is awesome";
       // Implementasikan kode untuk mengubah karakter pertama pada variable text menjadi huruf besar.
@@ -3543,7 +3529,7 @@ class TechnicalTest {
       return output == "Dart is awesome";
     },
 
-    // Exercise 306
+    // Exercise 304
     () {
       String text = "dart is awesome";
       // Implementasikan kode untuk mengubah karakter terakhir pada variable text menjadi huruf besar.
@@ -3551,7 +3537,7 @@ class TechnicalTest {
       return output == "dart is awesomE";
     },
 
-    // Exercise 307
+    // Exercise 305
     () {
       String text = "Dart is awesome";
       // Implementasikan kode untuk mengganti kata "awesome" pada variable text dengan kata "fantastic".
@@ -3559,7 +3545,7 @@ class TechnicalTest {
       return output == "Dart is fantastic";
     },
 
-    // Exercise 308
+    // Exercise 306
     () {
       String text = "Dart is awesome";
       // Implementasikan kode untuk mengambil 10 karakter pertama dari variable text.
@@ -3567,7 +3553,7 @@ class TechnicalTest {
       return output == "Dart is aw";
     },
 
-    // Exercise 309
+    // Exercise 307
     () {
       String text = "Dart is awesome";
       // Implementasikan kode untuk mengambil 8 karakter terakhir dari variable text.
@@ -3575,7 +3561,7 @@ class TechnicalTest {
       return output == " is awesome";
     },
 
-    // Exercise 310
+    // Exercise 308
     () {
       String text = "  Dart is awesome  ";
       // Implementasikan kode untuk menghapus spasi di awal dan akhir dari variable text.
@@ -3583,7 +3569,7 @@ class TechnicalTest {
       return output == "Dart is awesome";
     },
 
-    // Exercise 311
+    // Exercise 309
     () {
       String text = "Dart is awesome";
       // Implementasikan kode untuk memeriksa apakah kata "Dart" muncul pada variable text.
@@ -3591,7 +3577,7 @@ class TechnicalTest {
       return output;
     },
 
-    // Exercise 312
+    // Exercise 310
     () {
       String text = "Dart is awesome";
       // Implementasikan kode untuk memeriksa apakah variable text mengandung huruf "a".
@@ -3599,7 +3585,7 @@ class TechnicalTest {
       return output;
     },
 
-    // Exercise 313
+    // Exercise 311
     () {
       String text = "Dart is awesome";
       // Implementasikan kode untuk memeriksa apakah variable text mengandung huruf "x".
@@ -3607,7 +3593,7 @@ class TechnicalTest {
       return output == false;
     },
 
-    // Exercise 314
+    // Exercise 312
     () {
       String text = "Dart is awesome";
       // Implementasikan kode untuk menghitung jumlah huruf "a" pada variable text.
@@ -3615,7 +3601,7 @@ class TechnicalTest {
       return output == 2;
     },
 
-    // Exercise 315
+    // Exercise 313
     () {
       String text = "Dart is awesome";
       // Implementasikan kode untuk menghitung jumlah huruf "x" pada variable text.
@@ -3623,7 +3609,7 @@ class TechnicalTest {
       return output == 0;
     },
 
-    // Exercise 316
+    // Exercise 314
     () {
       String text = "Dart is awesome";
       // Implementasikan kode untuk menghitung jumlah huruf "a" atau "A" pada variable text.
@@ -3631,7 +3617,7 @@ class TechnicalTest {
       return output == 2;
     },
 
-    // Exercise 317
+    // Exercise 315
     () {
       String text = "Dart is awesome";
       // Implementasikan kode untuk memeriksa apakah variable text mengandung kata "is".
@@ -3639,7 +3625,7 @@ class TechnicalTest {
       return output;
     },
 
-    // Exercise 318
+    // Exercise 316
     () {
       String text = "Dart is awesome";
       // Implementasikan kode untuk memeriksa apakah variable text diawali dengan kata "Dart" dan mengandung kata "awesome".
@@ -3647,7 +3633,7 @@ class TechnicalTest {
       return output;
     },
 
-    // Exercise 319
+    // Exercise 317
     () {
       String text = "Dart is awesome";
       // Implementasikan kode untuk memeriksa apakah variable text diakhiri dengan huruf "e".
@@ -3655,7 +3641,7 @@ class TechnicalTest {
       return output;
     },
 
-    // Exercise 320
+    // Exercise 318
     () {
       String text = "Dart is awesome";
       // Implementasikan kode untuk memeriksa apakah variable text mengandung huruf "x" dan "a".
@@ -3663,7 +3649,7 @@ class TechnicalTest {
       return output == false;
     },
 
-    // Exercise 321
+    // Exercise 319
     () {
       String text = "Dart is awesome";
       // Implementasikan kode untuk menggabungkan variable text dengan string " and Flutter", hasilnya disimpan dalam variable baru.
@@ -3671,7 +3657,7 @@ class TechnicalTest {
       return output == "Dart is awesome and Flutter";
     },
 
-    // Exercise 322
+    // Exercise 320
     () {
       String text = "Dart is awesome";
       // Implementasikan kode untuk menggabungkan variable text dengan string " and Flutter" dengan menggunakan operator +=, hasilnya disimpan dalam variable baru.
@@ -3680,7 +3666,7 @@ class TechnicalTest {
       return output == "Dart is awesome and Flutter";
     },
 
-    // Exercise 323
+    // Exercise 321
     () {
       String text = "Dart is awesome";
       // Implementasikan kode untuk menggabungkan variable text dengan string " and Flutter" dengan menggunakan method concat, hasilnya disimpan dalam variable baru.
@@ -3688,15 +3674,15 @@ class TechnicalTest {
       return output == "Dart is awesome and Flutter";
     },
 
-    // Exercise 324
+    // Exercise 322
     () {
       String text = "Dart is awesome";
       // Implementasikan kode untuk mengubah variable text menjadi list kata-kata, hasilnya disimpan dalam variable baru.
-      List<String>? output = text.split(" ");
+      List<String>? output = [];
       return output.toString() == '[Dart, is, awesome]';
     },
 
-    // Exercise 325
+    // Exercise 323
     () {
       String text = "Awesome";
       // Implementasikan kode untuk mengubah variable text menjadi list karakter,
@@ -3705,7 +3691,7 @@ class TechnicalTest {
       return output.join("") == "Awesome";
     },
 
-    // Exercise 326
+    // Exercise 324
     () {
       String text = "Dart is awesome";
       // Implementasikan kode untuk mengubah list kata-kata pada variable text menjadi kalimat utuh, hasilnya disimpan dalam variable baru.
@@ -3713,14 +3699,14 @@ class TechnicalTest {
       return output == "Dart is awesome";
     },
 
-    // Exercise 327
+    // Exercise 325
     () {
       List<String> fruits = ["apple", "banana", "cherry"];
       // Implementasikan kode untuk menambahkan kata "orange" pada List fruits.
       return fruits.contains("orange");
     },
 
-    // Exercise 328
+    // Exercise 326
     () {
       List<String> fruits = ["apple", "banana", "cherry"];
       // Implementasikan kode untuk menggabungkan dua List menjadi satu, hasilnya disimpan dalam variable baru.
@@ -3729,7 +3715,7 @@ class TechnicalTest {
       return output.toString() == '[apple, banana, cherry, orange, grape]';
     },
 
-    // Exercise 329
+    // Exercise 327
     () {
       List<String> fruits = ["apple", "banana", "cherry"];
       // Implementasikan kode untuk menggabungkan dua List menjadi satu, hasilnya disimpan dalam List fruits.
@@ -3737,7 +3723,7 @@ class TechnicalTest {
       return fruits.toString() == '[apple, banana, cherry, orange, grape]';
     },
 
-    // Exercise 330
+    // Exercise 328
     () {
       List<String> fruits = ["apple", "banana", "cherry", "orange", "grape"];
       // Implementasikan kode untuk mengambil dua elemen pertama dari List fruits.
@@ -3745,21 +3731,21 @@ class TechnicalTest {
       return output.toString() == '[apple, banana]';
     },
 
-    // Exercise 331
+    // Exercise 329
     () {
       List<String> fruits = ["apple", "banana", "cherry", "orange", "grape"];
       // Implementasikan kode untuk menghapus dua elemen pertama dari List fruits.
       return fruits.toString() == '[cherry, orange, grape]';
     },
 
-    // Exercise 332
+    // Exercise 330
     () {
       List<String> fruits = ["apple", "banana", "cherry", "orange", "grape"];
       // Implementasikan kode untuk menghapus elemen dengan nilai "cherry" dari List fruits.
       return !fruits.contains("cherry");
     },
 
-    // Exercise 333
+    // Exercise 331
     () {
       List<int> numbers = [1, 2, 3, 4, 5];
       // Implementasikan kode untuk menghitung jumlah semua angka pada List numbers.
@@ -3767,7 +3753,7 @@ class TechnicalTest {
       return output == 15;
     },
 
-    // Exercise 334
+    // Exercise 332
     () {
       List<int> numbers = [1, 2, 3, 4, 5];
       // Implementasikan kode untuk menghitung hasil perkalian semua angka pada List numbers.
@@ -3775,7 +3761,7 @@ class TechnicalTest {
       return output == 120;
     },
 
-    // Exercise 335
+    // Exercise 333
     () {
       List<int> numbers = [1, 2, 3, 4, 5];
       // Implementasikan kode untuk menghitung hasil pembagian semua angka pada List numbers (dalam bentuk double).
@@ -3783,7 +3769,7 @@ class TechnicalTest {
       return output.toStringAsFixed(2) == "3.00";
     },
 
-    // Exercise 336
+    // Exercise 334
     () {
       List<int> numbers = [1, 2, 3, 4, 5];
       // Implementasikan kode untuk memeriksa apakah semua angka pada List numbers adalah angka positif (lebih besar dari 0).
@@ -3791,7 +3777,7 @@ class TechnicalTest {
       return output;
     },
 
-    // Exercise 337
+    // Exercise 335
     () {
       List<int> numbers = [1, 2, 3, 4, 5];
       // Implementasikan kode untuk memeriksa apakah setidaknya ada satu angka pada List numbers yang merupakan angka genap.
@@ -3799,7 +3785,7 @@ class TechnicalTest {
       return output;
     },
 
-    // Exercise 338
+    // Exercise 336
     () {
       List<int> numbers = [1, 2, 3, 4, 5];
       // Implementasikan kode untuk menemukan angka pertama pada List numbers yang merupakan angka genap.
@@ -3807,7 +3793,7 @@ class TechnicalTest {
       return output == 2;
     },
 
-    // Exercise 339
+    // Exercise 337
     () {
       List<int> numbers = [1, 2, 3, 4, 5];
       // Implementasikan kode untuk menemukan angka pertama pada List numbers yang merupakan angka ganjil.
@@ -3815,7 +3801,7 @@ class TechnicalTest {
       return output == 1;
     },
 
-    // Exercise 340
+    // Exercise 338
     () {
       List<int> numbers = [1, 2, 3, 4, 5];
       // Implementasikan kode untuk menemukan indeks angka pertama pada List numbers yang merupakan angka genap.
@@ -3823,7 +3809,7 @@ class TechnicalTest {
       return output == 1;
     },
 
-    // Exercise 341
+    // Exercise 339
     () {
       List<int> numbers = [1, 2, 3, 4, 5];
       // Implementasikan kode untuk menemukan indeks angka pertama pada List numbers yang merupakan angka ganjil.
@@ -3831,14 +3817,14 @@ class TechnicalTest {
       return output == 0;
     },
 
-    // Exercise 342
+    // Exercise 340
     () {
       List<int> numbers = [1, 2, 3, 4, 5];
       // Implementasikan kode untuk menghapus angka pertama pada List numbers yang merupakan angka genap.
       return !numbers.contains(2);
     },
 
-    // Exercise 343
+    // Exercise 341
     () {
       List<int> numbers = [1, 2, 3, 4, 5];
       // Implementasikan kode untuk menghapus semua angka pada List numbers yang merupakan angka ganjil.
@@ -3847,14 +3833,14 @@ class TechnicalTest {
           !numbers.contains(5);
     },
 
-    // Exercise 344
+    // Exercise 342
     () {
       List<int> numbers = [1, 2, 3, 4, 5];
       // Implementasikan kode untuk mengubah semua angka pada List numbers menjadi dua kali lipatnya.
       return numbers.toString() == '[2, 4, 6, 8, 10]';
     },
 
-    // Exercise 345
+    // Exercise 343
     () {
       List<int> numbers = [1, 2, 3, 4, 5];
       // Implementasikan kode untuk mengambil dua elemen terakhir dari List numbers.
@@ -3862,7 +3848,7 @@ class TechnicalTest {
       return output.toString() == '[4, 5]';
     },
 
-    // Exercise 346
+    // Exercise 344
     () {
       List<int> numbers = [1, 2, 3, 4, 5];
       // Implementasikan kode untuk mengambil tiga elemen pertama dari List numbers.
@@ -3870,7 +3856,7 @@ class TechnicalTest {
       return output.toString() == '[1, 2, 3]';
     },
 
-    // Exercise 347
+    // Exercise 345
     () {
       List<int> numbers = [1, 2, 3, 4, 5];
       // Implementasikan kode untuk mengambil tiga elemen terakhir dari List numbers.
@@ -3878,21 +3864,21 @@ class TechnicalTest {
       return output.toString() == '[3, 4, 5]';
     },
 
-    // Exercise 348
+    // Exercise 346
     () {
       List<int> numbers = [5, 3, 2, 1, 4];
       // Implementasikan kode untuk mengurutkan List numbers secara ascending.
       return numbers.toString() == '[1, 2, 3, 4, 5]';
     },
 
-    // Exercise 349
+    // Exercise 347
     () {
       List<int> numbers = [1, 2, 3, 4, 5];
       // Implementasikan kode untuk mengurutkan List numbers secara descending.
       return numbers.toString() == '[5, 4, 3, 2, 1]';
     },
 
-    // Exercise 350
+    // Exercise 348
     () {
       List<int> numbers = [1, 2, 3, 4, 5];
       // Implementasikan kode untuk menggabungkan List numbers dengan List numbers lainnya, kemudian mengurutkannya secara ascending.
@@ -3901,37 +3887,31 @@ class TechnicalTest {
       return output.toString() == '[1, 2, 3, 4, 5, 6, 7, 8]';
     },
 
-    // Exercise 351
+    // Exercise 349
     () {
       List numbers = [10, 20, 30, 40];
       List output = [];
       // ? Instruksi:Gunakan looping for untuk menambahkan semua item dari numbers ke output
       // >>> Tulis kode for loop di sini
-      for (var item in numbers) {
-        output.add(item);
-      }
 
       // --- End of Answer ---
       return output.toString() == "[10, 20, 30, 40]";
     },
 
-    // Exercise 352
+    // Exercise 350
     () {
       List<String> fruits = ["apple", "banana", "orange"];
       List<String> output = [];
 
       // ? Instruksi: Gunakan looping for untuk menambahkan semua item dari fruits ke output
       // >>> Tulis kode for loop di sini
-      for (var item in fruits) {
-        output.add(item);
-      }
 
       // --- End of Answer ---
 
       return output.toString() == "[apple, banana, orange]";
     },
 
-    // Exercise 353
+    // Exercise 351
     () {
       List<int> numbers = [5, 10, 15, 20];
       List<int> output = [];
@@ -3944,8 +3924,7 @@ class TechnicalTest {
       return output.toString() == "[5, 10, 15, 20]";
     },
 
-    // :::
-    // Exercise 354
+    // Exercise 352
     () {
       List<String> fruits = ['apple', 'banana', 'orange', 'grape', 'kiwi'];
       bool output = false;
@@ -3958,26 +3937,20 @@ class TechnicalTest {
       return output == true;
     },
 
-    // :::
-    // Exercise 355
+    // Exercise 353
     () {
       int n = 5;
       List<int> multiplesOfN = [];
 
       // ? Instruksi: Gunakan looping for untuk mengisi list multiplesOfN dengan kelipatan n dari 1 hingga 5
       // >>> Tulis kode for loop di sini
-      for (var i = 1; i <= 5; i++) {
-        var number = i * 5;
-        print(number);
-        multiplesOfN.add(number);
-      }
+
       // --- End of Answer ---
 
       return multiplesOfN.toString() == "[5, 10, 15, 20, 25]";
     },
 
-    // :::
-    // Exercise 356
+    // Exercise 354
     () {
       List<String> colors = ["red", "green", "blue"];
       String result = "";
@@ -3985,16 +3958,12 @@ class TechnicalTest {
       // ? Instruksi: Gunakan looping for untuk menggabungkan semua item dari colors menjadi satu string result
       // >>> Tulis kode for loop di sini
 
-      for (var item in colors) {
-        result = result + item;
-      }
       // --- End of Answer ---
 
       return result == "redgreenblue";
     },
 
-    // :::
-    // Exercise 357
+    // Exercise 355
     () {
       List<int> numbers = [1, 2, 3, 4, 5];
       int sum = 0;
@@ -4007,8 +3976,7 @@ class TechnicalTest {
       return sum == 15;
     },
 
-    // :::
-    // Exercise 358
+    // Exercise 356
     () {
       List<int> numbers = [1, 2, 3, 4, 5];
       int product = 1;
@@ -4021,26 +3989,20 @@ class TechnicalTest {
       return product == 120;
     },
 
-    // :::
-    // Exercise 359
+    // Exercise 357
     () {
       List<int> numbers = [1, 2, 3, 4, 5];
       List<int> reversedNumbers = [];
 
       // ? Instruksi: Gunakan looping for untuk mengisi list reversedNumbers dengan item dari numbers secara terbalik
       // >>> Tulis kode for loop di sini
-      numbers = numbers.reversed.toList();
-      print(numbers);
-      for (var item in numbers) {
-        reversedNumbers.add(item);
-      }
+
       // --- End of Answer ---
 
       return reversedNumbers.toString() == "[5, 4, 3, 2, 1]";
     },
 
-    // :::
-    // Exercise 360
+    // Exercise 358
     () {
       List<int> numbers = [1, 2, 3, 4, 5];
       List<int> oddNumbers = [];
@@ -4048,19 +4010,12 @@ class TechnicalTest {
       // ? Instruksi: Gunakan looping for untuk mengisi list oddNumbers dengan item dari numbers yang merupakan bilangan ganjil
       // >>> Tulis kode for loop di sini
 
-      for (var item in numbers) {
-        if (item % 2 != 0) {
-          oddNumbers.add(item);
-        }
-      }
-
       // --- End of Answer ---
 
       return oddNumbers.toString() == "[1, 3, 5]";
     },
 
-    // :::
-    // Exercise 361
+    // Exercise 359
     () {
       List<int> numbers = [1, 2, 3, 4, 5];
       int target = 3;
@@ -4074,56 +4029,19 @@ class TechnicalTest {
       return exists;
     },
 
-    // :::
-    // Exercise 362
-    () {
-      List<String> fruits = ["apple", "banana", "orange"];
-      String target = "pear";
-      bool exists = false;
-
-      // ? Instruksi: Gunakan looping for untuk mencari apakah target ada di dalam list fruits
-      // >>> Tulis kode for loop di sini
-
-      // --- End of Answer ---
-
-      return !exists;
-    },
-
-    // :::
-    // Exercise 363
-    () {
-      List<int> numbers = [2, 4, 6, 8, 10];
-      bool allEven = true;
-
-      // ? Instruksi: Gunakan looping for untuk mengecek apakah semua angka dalam list numbers adalah bilangan genap
-      // >>> Tulis kode for loop di sini
-
-      // --- End of Answer ---
-
-      return allEven;
-    },
-
-    // :::
-    // Exercise 364
+    // Exercise 360
     () {
       List<int> numbers = [3, 6, 9, 12, 15];
-      bool allDivisibleBy3 = true;
+      bool allDivisibleBy3 = false;
 
       // ? Instruksi: Gunakan looping for untuk mengecek apakah semua angka dalam list numbers dapat dibagi dengan 3 (hasil bagi = 0)
       // >>> Tulis kode for loop di sini
-
-      for (var item in numbers) {
-        if (item % 3 != 0) {
-          allDivisibleBy3 = false;
-        }
-      }
 
       // --- End of Answer ---
       return allDivisibleBy3;
     },
 
-    // :::
-    // Exercise 365
+    // Exercise 361
     () {
       List<String> fruits = ["apple", "banana", "kiwi", "orange"];
       String target = "kiwi";
@@ -4137,22 +4055,7 @@ class TechnicalTest {
       return found;
     },
 
-    // :::
-    // Exercise 366
-    () {
-      List<int> numbers = [1, 2, 3, 4, 5];
-      int sum = 0;
-
-      // ? Instruksi: Gunakan looping for untuk menjumlahkan semua angka dalam list numbers
-      // >>> Tulis kode for loop di sini
-
-      // --- End of Answer ---
-
-      return sum == 15;
-    },
-
-    // :::
-    // Exercise 367
+    // Exercise 362
     () {
       List<String> fruits = ["apple", "banana", "orange"];
       String joinedFruits = "";
@@ -4160,17 +4063,12 @@ class TechnicalTest {
       // ? Instruksi: Gunakan looping for untuk menggabungkan semua item dari list fruits menjadi satu string joinedFruits
       // >>> Tulis kode for loop di sini
 
-      for (var item in fruits) {
-        joinedFruits += item;
-      }
-
       // --- End of Answer ---
 
       return joinedFruits == "applebananaorange";
     },
 
-    // :::
-    // Exercise 368
+    // Exercise 363
     () {
       List<int> numbers = [2, 4, 6, 8, 10];
       int product = 1;
@@ -4183,26 +4081,20 @@ class TechnicalTest {
       return product == 3840;
     },
 
-    // :::
-    // Exercise 369
+    // Exercise 364
     () {
       List<int> numbers = [1, 3, 5, 7, 9];
       List<int> reversedNumbers = [];
 
       // ? Instruksi: Gunakan looping for untuk mengisi list reversedNumbers dengan item dari list numbers secara terbalik
       // >>> Tulis kode for loop di sini
-      numbers = numbers.reversed.toList();
-      for (var item in numbers) {
-        reversedNumbers.add(item);
-      }
 
       // --- End of Answer ---
 
       return reversedNumbers.toString() == "[9, 7, 5, 3, 1]";
     },
 
-    // :::
-    // Exercise 370
+    // Exercise 365
     () {
       List<int> numbers = [1, 2, 3, 4, 5];
       List<int> oddNumbers = [];
@@ -4210,19 +4102,12 @@ class TechnicalTest {
       // ? Instruksi: Gunakan looping for untuk mengisi list oddNumbers dengan item dari list numbers yang merupakan bilangan ganjil
       // >>> Tulis kode for loop di sini
 
-      for (var item in numbers) {
-        if (item % 2 != 0) {
-          oddNumbers.add(item);
-        }
-      }
-
       // --- End of Answer ---
 
       return oddNumbers.toString() == "[1, 3, 5]";
     },
 
-    // :::
-    // Exercise 371
+    // Exercise 366
     () {
       List<int> sales = [100, 200, 300, 400, 500];
       int salesTotal = 0;
@@ -4235,8 +4120,7 @@ class TechnicalTest {
       return salesTotal == 1500;
     },
 
-    // :::
-    // Exercise 372
+    // Exercise 367
     () {
       List<int> sales = [100, 200, 300, 400, 500];
       double salesAverage = 0;
@@ -4249,8 +4133,7 @@ class TechnicalTest {
       return salesAverage == 300;
     },
 
-    // :::
-    // Exercise 373
+    // Exercise 368
     () {
       List<int> productPrices = [1000, 2000, 1500, 3000, 500];
       int cheapestProduct = 0;
@@ -4263,27 +4146,20 @@ class TechnicalTest {
       return cheapestProduct == 500;
     },
 
-    // :::
-    // Exercise 374
+    // Exercise 369
     () {
       List<int> productPrices = [1000, 2000, 1500, 3000, 500];
       int expensiveProduct = 0;
 
       // ? Instruksi: Gunakan looping for untuk mencari harga produk termahal (expensiveProduct) dari list productPrices
       // >>> Tulis kode for loop di sini
-      for (var item in productPrices) {
-        if (item > expensiveProduct) {
-          expensiveProduct = item;
-        }
-      }
 
       // --- End of Answer ---
 
       return expensiveProduct == 3000;
     },
 
-    // :::
-    // Exercise 375
+    // Exercise 370
     () {
       List<String> products = [
         "apple",
@@ -4303,80 +4179,59 @@ class TechnicalTest {
       return favoriteProduct == "banana";
     },
 
-    // :::
-    // Exercise 376
+    // Exercise 371
     () {
       List<int> numbers = [1, 2, 3, 4, 5];
       List<int> squaredNumbers = [];
 
       // ? Instruksi: Gunakan looping for untuk mengisi list squaredNumbers dengan nilai kuadrat dari setiap angka dalam list numbers
       // >>> Tulis kode for loop di sini
-      for (var item in numbers) {
-        squaredNumbers.add(item * item);
-      }
 
       // --- End of Answer ---
 
       return squaredNumbers.toString() == "[1, 4, 9, 16, 25]";
     },
 
-    // :::
-    // Exercise 377
+    // Exercise 372
     () {
       List<int> numbers = [1, 2, 3, 4, 5];
       List<int> evenNumbers = [];
 
       // ? Instruksi: Gunakan looping for untuk mengisi list evenNumbers dengan angka genap dari list numbers
       // >>> Tulis kode for loop di sini
-      for (var item in numbers) {
-        if (item % 2 == 0) {
-          evenNumbers.add(item);
-        }
-      }
 
       // --- End of Answer ---
 
       return evenNumbers.toString() == "[2, 4]";
     },
 
-    // :::
-    // Exercise 378
+    // Exercise 373
     () {
       List<int> numbers = [1, 2, 3, 4, 5];
       List<int> oddNumbers = [];
 
       // ? Instruksi: Gunakan looping for untuk mengisi list oddNumbers dengan angka ganjil dari list numbers
       // >>> Tulis kode for loop di sini
-      for (var item in numbers) {
-        if (item % 2 != 0) {
-          oddNumbers.add(item);
-        }
-      }
 
       // --- End of Answer ---
 
       return oddNumbers.toString() == "[1, 3, 5]";
     },
 
-    // :::
-    // Exercise 379
+    // Exercise 374
     () {
       List<String> fruits = ["apple", "banana", "orange"];
       List<String> capitalizedFruits = [];
 
       // ? Instruksi: Gunakan looping for untuk mengisi list capitalizedFruits dengan semua item dari list fruits yang telah dijadikan huruf kapital
       // >>> Tulis kode for loop di sini
-      for (var item in fruits) {
-        capitalizedFruits.add(item.toUpperCase());
-      }
 
       // --- End of Answer ---
 
       return capitalizedFruits.toString() == "[APPLE, BANANA, ORANGE]";
     },
 
-    // :::
-    // Exercise 380
+    // Exercise 375
     () {
       List<String> names = ["Alice", "Bob", "Charlie", "David"];
       String concatenatedNames = "";
@@ -4388,27 +4243,20 @@ class TechnicalTest {
       return concatenatedNames == "Alice,Bob,Charlie,David";
     },
 
-    // :::
-    // Exercise 381
+    // Exercise 376
     () {
       List<int> numbers = [5, 2, 7, 3, 1];
       List<int> sortedNumbers = [];
 
       // ? Isi list 'sortedNumbers' dengan angka-angka yang telah diurutkan secara descending.
       // >>> Tulis kode for loop di sini
-      numbers.sort();
-      for (var i = numbers.length - 1; i >= 0; i--) {
-        var item = numbers[i];
-        sortedNumbers.add(item);
-      }
 
       // --- End of Answer ---
 
       return sortedNumbers.toString() == "[7, 5, 3, 2, 1]";
     },
 
-    // :::
-    // Exercise 382
+    // Exercise 377
     () {
       List<String> fruits = ["apple", "orange", "banana", "kiwi", "mango"];
       List<String> filteredFruits = [];
@@ -4421,8 +4269,7 @@ class TechnicalTest {
       return filteredFruits.toString() == "[apple, orange, banana, mango]";
     },
 
-    // :::
-    // Exercise 383
+    // Exercise 378
     () {
       List<int> numbers = [7, 2, 5, 3, 1];
       int sum = 0;
@@ -4435,8 +4282,7 @@ class TechnicalTest {
       return sum == 9;
     },
 
-    // :::
-    // Exercise 384
+    // Exercise 379
     () {
       List<int> numbers = [5, 2, 7, 3, 1];
       List<int> reversedNumbers = [];
@@ -4449,8 +4295,7 @@ class TechnicalTest {
       return reversedNumbers.toString() == "[1, 3, 7, 2, 5]";
     },
 
-    // :::
-    // Exercise 385
+    // Exercise 380
     () {
       List<String> words = ["apple", "orange", "banana", "kiwi", "mango"];
       String concatenatedWords = "";
@@ -4463,8 +4308,7 @@ class TechnicalTest {
       return concatenatedWords == "apple orange banana kiwi mango ";
     },
 
-    // :::
-    // Exercise 386
+    // Exercise 381
     () {
       List<int> numbers = [5, 2, 7, 3, 1];
       List<int> squaredNumbers = [];
@@ -4477,8 +4321,7 @@ class TechnicalTest {
       return squaredNumbers.toString() == "[25, 4, 49, 9, 1]";
     },
 
-    // :::
-    // Exercise 387
+    // Exercise 382
     () {
       List<int> numbers = [5, 2, 7, 3, 1];
       int minValue = numbers[0];
@@ -4491,8 +4334,7 @@ class TechnicalTest {
       return minValue == 1;
     },
 
-    // :::
-    // Exercise 388
+    // Exercise 383
     () {
       List<int> numbers = [5, 2, 7, 3, 1];
       int maxValue = numbers[0];
@@ -4505,8 +4347,7 @@ class TechnicalTest {
       return maxValue == 7;
     },
 
-    // :::
-    // Exercise 389
+    // Exercise 384
     () {
       List<int> numbers = [5, 2, 7, 3, 1];
       List<int> evenNumbers = [];
@@ -4519,8 +4360,7 @@ class TechnicalTest {
       return evenNumbers.toString() == "[2]";
     },
 
-    // :::
-    // Exercise 390
+    // Exercise 385
     () {
       List<int> numbers = [5, 2, 7, 3, 1];
       List<int> evenNumbers = [];
@@ -4535,8 +4375,7 @@ class TechnicalTest {
       return evenNumbers.toString() == "[18]";
     },
 
-    // :::
-    // Exercise 391
+    // Exercise 386
     () {
       List<Map> users = [
         {
@@ -4565,8 +4404,7 @@ class TechnicalTest {
       return filteredUsers.isNotEmpty && filteredUsers[0]["id"] == 1;
     },
 
-    // :::
-    // Exercise 392
+    // Exercise 387
     () {
       List<Map<String, dynamic>> users = [
         {
@@ -4595,8 +4433,7 @@ class TechnicalTest {
       return filteredUsers.isNotEmpty && filteredUsers[0]["id"] == 2;
     },
 
-    // :::
-    // Exercise 393
+    // Exercise 388
     () {
       List<Map<String, dynamic>> users = [
         {
@@ -4625,8 +4462,7 @@ class TechnicalTest {
       return filteredUsers.isNotEmpty && filteredUsers[0]["id"] == 2;
     },
 
-    // :::
-    // Exercise 394
+    // Exercise 389
     () {
       List<Map<String, dynamic>> users = [
         {
@@ -4655,8 +4491,7 @@ class TechnicalTest {
       return names.isNotEmpty && names.length == 3;
     },
 
-    // :::
-    // Exercise 395
+    // Exercise 390
     () {
       List<Map<String, dynamic>> users = [
         {
@@ -4685,8 +4520,7 @@ class TechnicalTest {
       return age == 31;
     },
 
-    // :::
-    // Exercise 396
+    // Exercise 391
     () {
       List<Map<String, dynamic>> users = [
         {
@@ -4715,8 +4549,7 @@ class TechnicalTest {
       return containsId3;
     },
 
-    // :::
-    // Exercise 397
+    // Exercise 392
     () {
       List<Map<String, dynamic>> users = [
         {
@@ -4745,8 +4578,7 @@ class TechnicalTest {
       return updatedUsers.isNotEmpty && updatedUsers[0]["age"] == 30;
     },
 
-    // :::
-    // Exercise 398
+    // Exercise 393
     () {
       List<Map<String, dynamic>> users = [
         {
@@ -4776,8 +4608,7 @@ class TechnicalTest {
       return filteredUsers.isNotEmpty && filteredUsers[0]["id"] == 3;
     },
 
-    // :::
-    // Exercise 399
+    // Exercise 394
     () {
       List<Map<String, dynamic>> users = [
         {
@@ -4806,8 +4637,7 @@ class TechnicalTest {
       return names.isNotEmpty && names.length == 2;
     },
 
-    // :::
-    // Exercise 400
+    // Exercise 395
     () {
       List<Map<String, dynamic>> users = [
         {
@@ -4835,8 +4665,7 @@ class TechnicalTest {
       return users.length == 2 && users[1]["name"] == "David";
     },
 
-    // :::
-    // Exercise 401
+    // Exercise 396
     () {
       List<Map<String, dynamic>> data = [
         {"transaction": "Sale", "amount": 1000},
@@ -4854,8 +4683,7 @@ class TechnicalTest {
       return totalSales == 2300;
     },
 
-    // :::
-    // Exercise 402
+    // Exercise 397
     () {
       List<Map<String, dynamic>> data = [
         {"transaction": "Sale", "amount": 1000},
@@ -4873,8 +4701,7 @@ class TechnicalTest {
       return totalRefunds == 200;
     },
 
-    // :::
-    // Exercise 403
+    // Exercise 398
     () {
       List<Map<String, dynamic>> data = [
         {"transaction": "Sale", "amount": 1000, "isPromo": false},
@@ -4892,8 +4719,7 @@ class TechnicalTest {
       return totalPromoSales == 500;
     },
 
-    // :::
-    // Exercise 404
+    // Exercise 399
     () {
       List<Map<String, dynamic>> data = [
         {"transaction": "Sale", "amount": 1000, "category": "Electronics"},
@@ -4911,8 +4737,7 @@ class TechnicalTest {
       return totalElectronicsSales == 1500;
     },
 
-    // :::
-    // Exercise 405
+    // Exercise 400
     () {
       List<Map<String, dynamic>> data = [
         {"transaction": "Sale", "amount": 1000, "category": "Electronics"},
@@ -4925,22 +4750,12 @@ class TechnicalTest {
       // Instruksi: Gunakan looping for untuk menghitung total refund kategori "Fashion" dari data transaksi
       // >>> Tulis kode for loop di sini
 
-      for (var item in data) {
-        if (item["category"] == "Fashion" && item["transaction"] == "Refund") {
-          int amount = item["amount"];
-          totalFashionRefunds += amount;
-        }
-      }
-
-      print(totalFashionRefunds);
-
       // --- End of Answer ---
 
       return totalFashionRefunds == 200;
     },
 
-    // :::
-    // Exercise 406
+    // Exercise 401
     () {
       List<Map<String, dynamic>> data = [
         {"transaction": "Sale", "amount": 1000, "category": "Electronics"},
@@ -4958,27 +4773,7 @@ class TechnicalTest {
       return totalSalesInElectronics == 1500;
     },
 
-    // :::
-    // Exercise 407
-    () {
-      List<Map<String, dynamic>> data = [
-        {"transaction": "Sale", "amount": 1000, "category": "Electronics"},
-        {"transaction": "Refund", "amount": -200, "category": "Fashion"},
-        {"transaction": "Sale", "amount": 500, "category": "Electronics"},
-        {"transaction": "Sale", "amount": 800, "category": "Fashion"},
-      ];
-      int totalRefundsInElectronics = 0;
-
-      // Instruksi: Gunakan looping for untuk menghitung total refund kategori "Electronics" dari data transaksi
-      // >>> Tulis kode for loop di sini
-
-      // --- End of Answer ---
-
-      return totalRefundsInElectronics == 0;
-    },
-
-    // :::
-    // Exercise 408
+    // Exercise 402
     () {
       List<Map<String, dynamic>> data = [
         {"transaction": "Sale", "amount": 1000, "category": "Electronics"},
@@ -4997,8 +4792,7 @@ class TechnicalTest {
       return totalSales == 2300 && totalRefunds == 200;
     },
 
-    // :::
-    // Exercise 409
+    // Exercise 403
     () {
       List<Map<String, dynamic>> data = [
         {"name": "John", "hoursWorked": 40, "hourlyRate": 20},
@@ -5014,8 +4808,7 @@ class TechnicalTest {
       return totalSalary == 2150;
     },
 
-    // :::
-    // Exercise 410
+    // Exercise 404
     () {
       List<Map<String, dynamic>> data = [
         {"name": "John", "hoursWorked": 40, "hourlyRate": 20},
@@ -5032,8 +4825,7 @@ class TechnicalTest {
       return maxHourlyRate == 30;
     },
 
-    // :::
-    // Exercise 411
+    // Exercise 405
     () {
       List<Map<String, dynamic>> products = [
         {"id": 1, "name": "Keyboard", "price": 250000},
@@ -5050,8 +4842,7 @@ class TechnicalTest {
       return totalHarga == 750000;
     },
 
-    // :::
-    // Exercise 412
+    // Exercise 406
     () {
       List<Map<String, dynamic>> transactions = [
         {"id": 1, "amount": 3, "price": 50000},
@@ -5068,8 +4859,7 @@ class TechnicalTest {
       return totalPendapatan == 375000;
     },
 
-    // :::
-    // Exercise 413
+    // Exercise 407
     () {
       List<Map<String, dynamic>> employees = [
         {"id": 1, "name": "John", "salary": 5000000},
@@ -5088,8 +4878,7 @@ class TechnicalTest {
       return rataRataGaji == 5166666.666666667;
     },
 
-    // :::
-    // Exercise 414
+    // Exercise 408
     () {
       List<Map<String, dynamic>> orders = [
         {"id": 1, "product": "Keyboard", "quantity": 2, "price": 250000},
@@ -5106,8 +4895,7 @@ class TechnicalTest {
       return totalNilaiPemesanan == 1300000.0;
     },
 
-    // :::
-    // Exercise 415
+    // Exercise 409
     () {
       List<Map<String, dynamic>> shipments = [
         {"id": 1, "product": "Keyboard", "quantity": 2, "shippingCost": 20000},
@@ -5129,8 +4917,7 @@ class TechnicalTest {
       return maxBiayaPengiriman == 25000;
     },
 
-    // :::
-    // Exercise 416
+    // Exercise 410
     () {
       List<Map<String, dynamic>> attendance = [
         {"id": 1, "name": "John", "isPresent": true},
@@ -5148,8 +4935,7 @@ class TechnicalTest {
       return jumlahHadir == 2;
     },
 
-    // :::
-    // Exercise 417
+    // Exercise 411
     () {
       List<Map<String, dynamic>> warehouse = [
         {"id": 1, "product": "Keyboard", "stock": 50},
@@ -5166,8 +4952,7 @@ class TechnicalTest {
       return maxStok == 50;
     },
 
-    // :::
-    // Exercise 418
+    // Exercise 412
     () {
       List<Map<String, dynamic>> projectTasks = [
         {"id": 1, "task": "Design", "progress": 100},
@@ -5184,8 +4969,7 @@ class TechnicalTest {
       return jumlahSelesai == 1;
     },
 
-    // :::
-    // Exercise 419
+    // Exercise 413
     () {
       List<Map<String, dynamic>> employeeAttendance = [
         {"id": 1, "name": "John", "isPresent": true},
@@ -5203,8 +4987,7 @@ class TechnicalTest {
       return hadirOnly.length == 2;
     },
 
-    // :::
-    // Exercise 420
+    // Exercise 414
     () {
       List<Map<String, dynamic>> studentScores = [
         {"id": 1, "name": "John", "score": 85},
@@ -5224,8 +5007,7 @@ class TechnicalTest {
       return averageScore == 85.75;
     },
 
-// :::
-    // Exercise 421
+    // Exercise 415
     () {
       List<Map<String, dynamic>> sales = [
         {"id": 1, "product": "Keyboard", "quantitySold": 100, "price": 250000},
@@ -5242,8 +5024,7 @@ class TechnicalTest {
       return totalSales == 180;
     },
 
-// :::
-    // Exercise 422
+    // Exercise 416
     () {
       List<Map<String, dynamic>> employees = [
         {"id": 1, "name": "John", "age": 30, "salary": 5000000},
@@ -5260,8 +5041,7 @@ class TechnicalTest {
       return totalSalary == 15500000;
     },
 
-// :::
-    // Exercise 423
+    // Exercise 417
     () {
       List<Map<String, dynamic>> employees = [
         {"id": 1, "name": "John", "age": 30, "salary": 5000000},
@@ -5278,8 +5058,7 @@ class TechnicalTest {
       return averageAge == 30.0;
     },
 
-// :::
-    // Exercise 424
+    // Exercise 418
     () {
       List<Map<String, dynamic>> products = [
         {"id": 1, "name": "Keyboard", "price": 250000, "quantitySold": 100},
@@ -5297,8 +5076,7 @@ class TechnicalTest {
       return maxPrice == 350000 && minPrice == 150000;
     },
 
-// :::
-    // Exercise 425
+    // Exercise 419
     () {
       List<Map<String, dynamic>> products = [
         {"id": 1, "name": "Keyboard", "quantitySold": 100},
@@ -5316,8 +5094,7 @@ class TechnicalTest {
       return bestProduct == "Keyboard";
     },
 
-// :::
-    // Exercise 426
+    // Exercise 420
     () {
       List<Map<String, dynamic>> employees = [
         {"id": 1, "name": "John", "kpi": 90},
@@ -5335,8 +5112,7 @@ class TechnicalTest {
       return bestEmployee == "John";
     },
 
-// :::
-    // Exercise 427
+    // Exercise 421
     () {
       List<Map<String, dynamic>> employees = [
         {"id": 1, "name": "John", "kpi": 90},
@@ -5353,8 +5129,7 @@ class TechnicalTest {
       return lowPerformers.contains("Bob");
     },
 
-// :::
-    // Exercise 428
+    // Exercise 422
     () {
       List<Map<String, dynamic>> employees = [
         {"id": 1, "name": "John", "kpi": 90},
@@ -5371,9 +5146,7 @@ class TechnicalTest {
       double averageKpi = totalKpi / employees.length;
       return averageKpi == 80.0;
     },
-
-    /// :::
-    // Exercise 429
+    // Exercise 423
     () {
       List<Map<String, dynamic>> products = [
         {"id": 1, "name": "Keyboard", "price": 250000, "quantitySold": 100},
@@ -5392,8 +5165,7 @@ class TechnicalTest {
       return maxPrice == 350000 && minPrice == 150000;
     },
 
-// :::
-    // Exercise 430
+    // Exercise 424
     () {
       List<Map<String, dynamic>> products = [
         {"id": 1, "name": "Keyboard", "quantitySold": 100},
@@ -5411,8 +5183,7 @@ class TechnicalTest {
       return bestProduct == "Keyboard";
     },
 
-// :::
-    // Exercise 431
+    // Exercise 425
     () {
       List<Map<String, dynamic>> employees = [
         {"id": 1, "name": "John", "kpi": 90, "absentDays": 3},
@@ -5430,8 +5201,7 @@ class TechnicalTest {
       return bestEmployee == "Bob";
     },
 
-// :::
-    // Exercise 432
+    // Exercise 426
     () {
       List<Map<String, dynamic>> products = [
         {"id": 1, "name": "Keyboard", "quantitySold": 100, "soldInDays": 10},
@@ -5449,8 +5219,7 @@ class TechnicalTest {
       return bestProduct == "Headphones";
     },
 
-// :::
-    // Exercise 433
+    // Exercise 427
     () {
       List<Map<String, dynamic>> employees = [
         {"id": 1, "name": "John", "kpi": 90, "absentDays": 3},
@@ -5467,8 +5236,7 @@ class TechnicalTest {
       return highPerformers.contains("John");
     },
 
-// :::
-    // Exercise 434
+    // Exercise 428
     () {
       List<Map<String, dynamic>> products = [
         {"id": 1, "name": "Keyboard", "quantitySold": 100, "soldInDays": 10},
@@ -5486,8 +5254,7 @@ class TechnicalTest {
       return bestProducts.length == 1 && bestProducts.contains("Headphones");
     },
 
-// :::
-    // Exercise 435
+    // Exercise 429
     () {
       List<Map<String, dynamic>> employees = [
         {"id": 1, "name": "John", "kpi": 90, "absentDays": 3},
@@ -5507,8 +5274,7 @@ class TechnicalTest {
           highPerformers[1]["name"] == "Bob";
     },
 
-// :::
-    // Exercise 436
+    // Exercise 430
     () {
       List<Map<String, dynamic>> employees = [
         {"id": 1, "name": "John", "kpi": 90, "absentDays": 3},
@@ -5526,8 +5292,7 @@ class TechnicalTest {
       return lowPerformers.length == 1 && lowPerformers[0]["name"] == "Bob";
     },
 
-// :::
-    // Exercise 437
+    // Exercise 431
     () {
       List<Map<String, dynamic>> products = [
         {"id": 1, "name": "Keyboard", "quantitySold": 100, "soldInDays": 10},
@@ -5547,8 +5312,7 @@ class TechnicalTest {
           bestProducts[0]["name"] == "Headphones";
     },
 
-// :::
-    // Exercise 438
+    // Exercise 432
     () {
       List<Map<String, dynamic>> employees = [
         {"id": 1, "name": "John", "kpi": 90, "absentDays": 3},
@@ -5566,8 +5330,7 @@ class TechnicalTest {
       return goodPerformers.length == 1 && goodPerformers[0]["name"] == "Bob";
     },
 
-// :::
-    // Exercise 439
+    // Exercise 433
     () {
       List<Map<String, dynamic>> products = [
         {"id": 1, "name": "Keyboard", "quantitySold": 100, "soldInDays": 10},
@@ -5586,32 +5349,7 @@ class TechnicalTest {
       return bestProducts.length == 1 &&
           bestProducts[0]["name"] == "Headphones";
     },
-
-// :::
-    // Exercise 440
-    () {
-      List<Map<String, dynamic>> employees = [
-        {"id": 1, "name": "John", "kpi": 90, "absentDays": 3},
-        {"id": 2, "name": "Alice", "kpi": 80, "absentDays": 5},
-        {"id": 3, "name": "Bob", "kpi": 70, "absentDays": 1},
-      ];
-      List<Map<String, dynamic>> badPerformers = [];
-
-      // ? Instruksi: Gunakan looping for untuk mencari karyawan dengan absensi buruk (lebih dari 3 hari absentDays) di dalam list employees
-      // Kemudian masukkan data karyawan tersebut ke dalam list badPerformers
-      // >>> Tulis kode for loop di sini
-      for (var item in employees) {
-        if (item["absentDays"] > 3) {
-          badPerformers.add(item);
-        }
-      }
-      // --- End of Answer ---
-
-      return badPerformers.length == 1 && badPerformers[0]["name"] == "Alice";
-    },
-
-    // :::
-    // Exercise 441
+    // Exercise 434
     () {
       List<Map<String, dynamic>> employees = [
         {"id": 1, "name": "John", "age": 28, "department": "HR"},
@@ -5629,8 +5367,7 @@ class TechnicalTest {
       return hrEmployees.length == 1 && hrEmployees.contains("John");
     },
 
-// :::
-    // Exercise 442
+    // Exercise 435
     () {
       List<Map<String, dynamic>> products = [
         {"id": 1, "name": "Keyboard", "price": 250000, "quantity": 50},
@@ -5650,31 +5387,7 @@ class TechnicalTest {
           expensiveProducts.contains("Headphones");
     },
 
-// :::
-    // Exercise 443
-    () {
-      List<Map<String, dynamic>> employees = [
-        {"id": 1, "name": "John", "age": 28, "department": "HR"},
-        {"id": 2, "name": "Alice", "age": 32, "department": "Finance"},
-        {"id": 3, "name": "Bob", "age": 25, "department": "IT"},
-      ];
-      List<String> financeEmployees = [];
-
-      // ? Instruksi: Gunakan looping for untuk mencari karyawan yang bekerja di departemen "Finance"
-      // Kemudian masukkan nama karyawan tersebut ke dalam list financeEmployees
-      // >>> Tulis kode for loop di sini
-      for (var item in employees) {
-        if (item["department"] == "Finance") {
-          financeEmployees.add(item["name"]);
-        }
-      }
-      // --- End of Answer ---
-
-      return financeEmployees.length == 1 && financeEmployees.contains("Alice");
-    },
-
-// :::
-    // Exercise 444
+    // Exercise 436
     () {
       List<Map<String, dynamic>> products = [
         {"id": 1, "name": "Keyboard", "price": 250000, "quantity": 50},
@@ -5694,8 +5407,7 @@ class TechnicalTest {
           affordableProducts.contains("Mouse");
     },
 
-// :::
-    // Exercise 445
+    // Exercise 437
     () {
       List<Map<String, dynamic>> employees = [
         {"id": 1, "name": "John", "age": 28, "department": "HR"},
@@ -5713,8 +5425,7 @@ class TechnicalTest {
       return hrEmployee == "John";
     },
 
-// :::
-    // Exercise 446
+    // Exercise 438
     () {
       List<Map<String, dynamic>> products = [
         {"id": 1, "name": "Keyboard", "price": 250000, "quantity": 50},
@@ -5732,8 +5443,7 @@ class TechnicalTest {
       return expensiveProduct == "Headphones";
     },
 
-// :::
-    // Exercise 447
+    // Exercise 439
     () {
       List<Map<String, dynamic>> employees = [
         {"id": 1, "name": "John", "age": 28, "department": "HR"},
@@ -5751,8 +5461,7 @@ class TechnicalTest {
       return itEmployees.length == 1 && itEmployees.contains("Bob");
     },
 
-// :::
-    // Exercise 448
+    // Exercise 440
     () {
       List<Map<String, dynamic>> products = [
         {"id": 1, "name": "Keyboard", "price": 250000, "quantity": 50},
@@ -5771,8 +5480,7 @@ class TechnicalTest {
           affordableProducts.contains("Mouse");
     },
 
-// :::
-    // Exercise 449
+    // Exercise 441
     () {
       List<Map<String, dynamic>> employees = [
         {"id": 1, "name": "John", "age": 28, "gender": "Male"},
@@ -5792,8 +5500,7 @@ class TechnicalTest {
       return name == "Alice" && age == 32 && gender == "Female";
     },
 
-// :::
-    // Exercise 450
+    // Exercise 442
     () {
       List<Map<String, dynamic>> products = [
         {"id": 1, "name": "Keyboard", "price": 250000, "quantitySold": 40},
@@ -5811,8 +5518,7 @@ class TechnicalTest {
       return matchedProducts.isNotEmpty && matchedProducts.first["id"] == 1;
     },
 
-    // :::
-    // Exercise 451
+    // Exercise 443
     () {
       List<Map<String, dynamic>> employees = [
         {"id": 1, "name": "John Doe", "age": 28},
@@ -5831,8 +5537,7 @@ class TechnicalTest {
           matchedEmployees[0]["name"] == "John Doe";
     },
 
-// :::
-    // Exercise 452
+    // Exercise 444
     () {
       List<Map<String, dynamic>> products = [
         {"id": 1, "name": "Keyboard Logitech", "price": 250000},
@@ -5851,8 +5556,7 @@ class TechnicalTest {
           matchedProducts[0]["name"] == "Headphones Sony";
     },
 
-// :::
-    // Exercise 453
+    // Exercise 445
     () {
       List<Map<String, dynamic>> employees = [
         {"id": 1, "name": "John Doe", "age": 28},
@@ -5871,8 +5575,7 @@ class TechnicalTest {
           matchedEmployees[0]["name"] == "John Doe";
     },
 
-// :::
-    // Exercise 454
+    // Exercise 446
     () {
       List<Map<String, dynamic>> products = [
         {"id": 1, "name": "Keyboard Logitech", "price": 250000},
@@ -5892,8 +5595,7 @@ class TechnicalTest {
           matchedProducts[1]["name"] == "Mouse Logitech";
     },
 
-// :::
-    // Exercise 455
+    // Exercise 447
     () {
       List<Map<String, dynamic>> employees = [
         {"id": 1, "name": "John Doe", "age": 28},
@@ -5912,8 +5614,7 @@ class TechnicalTest {
           matchedEmployees[0]["name"] == "Bob Johnson";
     },
 
-// :::
-    // Exercise 456
+    // Exercise 448
     () {
       List<Map<String, dynamic>> products = [
         {"id": 1, "name": "Keyboard Logitech", "price": 250000},
@@ -5932,29 +5633,7 @@ class TechnicalTest {
       return matchedProducts.length == 3;
     },
 
-// :::
-    // Exercise 457
-    () {
-      List<Map<String, dynamic>> employees = [
-        {"id": 1, "name": "John Doe", "age": 28},
-        {"id": 2, "name": "Alice Smith", "age": 32},
-        {"id": 3, "name": "Bob Johnson", "age": 25},
-      ];
-      List<Map<String, dynamic>> matchedEmployees = [];
-
-      // ? Instruksi: Gunakan looping for untuk mencari karyawan dengan nama depan mengandung huruf "Jo"
-      // dan usia kurang dari 30 tahun
-      // Kemudian masukkan data karyawan tersebut ke dalam list matchedEmployees
-      // >>> Tulis kode for loop di sini
-
-      // --- End of Answer ---
-
-      return matchedEmployees.length == 1 &&
-          matchedEmployees[0]["name"] == "John Doe";
-    },
-
-// :::
-    // Exercise 458
+    // Exercise 449
     () {
       List<Map<String, dynamic>> products = [
         {"id": 1, "name": "Keyboard Logitech", "price": 250000},
@@ -5973,48 +5652,7 @@ class TechnicalTest {
       return matchedProducts.length == 2;
     },
 
-// :::
-    // Exercise 459
-    () {
-      List<Map<String, dynamic>> employees = [
-        {"id": 1, "name": "John Doe", "age": 28},
-        {"id": 2, "name": "Alice Smith", "age": 32},
-        {"id": 3, "name": "Bob Johnson", "age": 25},
-      ];
-      List<Map<String, dynamic>> matchedEmployees = [];
-
-      // ? Instruksi: Gunakan looping for untuk mencari karyawan dengan nama depan mengandung huruf "Jo"
-      // dan usia lebih dari 30 tahun
-      // Kemudian masukkan data karyawan tersebut ke dalam list matchedEmployees
-      // >>> Tulis kode for loop di sini
-
-      // --- End of Answer ---
-
-      return matchedEmployees.length == 0;
-    },
-
-// :::
-    // Exercise 460
-    () {
-      List<Map<String, dynamic>> products = [
-        {"id": 1, "name": "Keyboard Logitech", "price": 250000},
-        {"id": 2, "name": "Mouse Logitech", "price": 150000},
-        {"id": 3, "name": "Headphones Sony", "price": 350000},
-      ];
-      List<Map<String, dynamic>> matchedProducts = [];
-
-      // ? Instruksi: Gunakan looping for untuk mencari produk dengan harga kurang dari 100000
-      // atau mengandung huruf "Samsung" dalam nama produk
-      // Kemudian masukkan data produk tersebut ke dalam list matchedProducts
-      // >>> Tulis kode for loop di sini
-
-      // --- End of Answer ---
-
-      return matchedProducts.length == 0;
-    },
-
-// :::
-    // Exercise 461
+    // Exercise 451
     () {
       List<Map<String, dynamic>> employees = [
         {"id": 1, "name": "John Doe", "age": 28},
@@ -6034,8 +5672,7 @@ class TechnicalTest {
           matchedEmployees[0]["name"] == "Alice Smith";
     },
 
-// :::
-    // Exercise 462
+    // Exercise 452
     () {
       List<Map<String, dynamic>> products = [
         {"id": 1, "name": "Keyboard Logitech", "price": 250000},
@@ -6055,8 +5692,7 @@ class TechnicalTest {
           matchedProducts[0]["name"] == "Headphones Sony";
     },
 
-// :::
-    // Exercise 463
+    // Exercise 453
     () {
       List<Map<String, dynamic>> employees = [
         {"id": 1, "name": "John Doe", "age": 28},
@@ -6077,8 +5713,7 @@ class TechnicalTest {
           matchedEmployees[1]["name"] == "Bob Johnson";
     },
 
-// :::
-    // Exercise 464
+    // Exercise 454
     () {
       List<Map<String, dynamic>> products = [
         {"id": 1, "name": "Keyboard Logitech", "price": 250000},
@@ -6098,8 +5733,7 @@ class TechnicalTest {
           matchedProducts[0]["name"] == "Mouse Logitech";
     },
 
-// :::
-    // Exercise 465
+    // Exercise 455
     () {
       List<Map<String, dynamic>> employees = [
         {"id": 1, "name": "John Doe", "age": 28},
@@ -6119,28 +5753,7 @@ class TechnicalTest {
           matchedEmployees[0]["name"] == "Bob Johnson";
     },
 
-// :::
-    // Exercise 466
-    () {
-      List<Map<String, dynamic>> products = [
-        {"id": 1, "name": "Keyboard Logitech", "price": 250000},
-        {"id": 2, "name": "Mouse Logitech", "price": 150000},
-        {"id": 3, "name": "Headphones Sony", "price": 350000},
-      ];
-      List<Map<String, dynamic>> matchedProducts = [];
-
-      // ? Instruksi: Gunakan looping for untuk mencari produk dengan harga kurang dari 100000
-      // dan nama mengandung huruf "Samsung" dalam produk
-      // Kemudian masukkan data produk tersebut ke dalam list matchedProducts
-      // >>> Tulis kode for loop di sini
-
-      // --- End of Answer ---
-
-      return matchedProducts.length == 0;
-    },
-
-// :::
-    // Exercise 467
+    // Exercise 456
     () {
       List<Map<String, dynamic>> employees = [
         {"id": 1, "name": "John Doe", "age": 36},
@@ -6159,8 +5772,7 @@ class TechnicalTest {
       return matchedEmployees.isNotEmpty && matchedEmployees.first["id"] == 2;
     },
 
-// :::
-    // Exercise 468
+    // Exercise 457
     () {
       List<Map<String, dynamic>> products = [
         {"id": 1, "name": "Keyboard Logitech", "price": 250000},
@@ -6180,8 +5792,7 @@ class TechnicalTest {
           matchedProducts[0]["name"] == "Headphones Sony";
     },
 
-// :::
-    // Exercise 469
+    // Exercise 458
     () {
       List<Map<String, dynamic>> employees = [
         {"id": 1, "name": "John Doe", "age": 28},
@@ -6201,8 +5812,7 @@ class TechnicalTest {
           matchedEmployees[0]["name"] == "Bob Johnson";
     },
 
-// :::
-    // Exercise 470
+    // Exercise 459
     () {
       List<Map<String, dynamic>> products = [
         {"id": 1, "name": "Keyboard Logitech", "price": 250000},
@@ -6222,8 +5832,7 @@ class TechnicalTest {
           matchedProducts[0]["name"] == "Mouse Logitech";
     },
 
-    // :::
-    // Exercise 471
+    // Exercise 460
     () {
       List<Map<String, dynamic>> orders = [
         {"id": 1, "product": "Phone", "quantity": 2, "total": 1000},
@@ -6241,8 +5850,7 @@ class TechnicalTest {
       return index == 2;
     },
 
-// :::
-    // Exercise 472
+    // Exercise 461
     () {
       List<Map<String, dynamic>> employees = [
         {"name": "John", "age": 30, "department": "Sales", "salary": 5000},
@@ -6259,8 +5867,7 @@ class TechnicalTest {
       return index == 3;
     },
 
-// :::
-    // Exercise 473
+    // Exercise 462
     () {
       List<Map<String, dynamic>> transactions = [
         {"id": 1, "type": "Sale", "amount": 100, "status": "Completed"},
@@ -6279,8 +5886,7 @@ class TechnicalTest {
       return index == 4;
     },
 
-// :::
-    // Exercise 474
+    // Exercise 463
     () {
       List<Map<String, dynamic>> products = [
         {"id": 1, "name": "Phone", "price": 500},
@@ -6298,8 +5904,7 @@ class TechnicalTest {
       return index == 1;
     },
 
-// :::
-    // Exercise 475
+    // Exercise 464
     () {
       List<Map<String, dynamic>> employees = [
         {"name": "John", "age": 30, "department": "Sales", "salary": 5000},
@@ -6317,8 +5922,7 @@ class TechnicalTest {
       return index == 2;
     },
 
-// :::
-    // Exercise 476
+    // Exercise 465
     () {
       List<Map<String, dynamic>> transactions = [
         {"id": 1, "type": "Sale", "amount": 100, "status": "Completed"},
@@ -6337,8 +5941,7 @@ class TechnicalTest {
       return index == 2;
     },
 
-    // :::
-    // Exercise 477
+    // Exercise 466
     () {
       List<Map<String, dynamic>> products = [
         {"id": 1, "name": "Phone", "price": 500, "stock": 10},
@@ -6355,8 +5958,7 @@ class TechnicalTest {
       return index == 2;
     },
 
-// :::
-    // Exercise 478
+    // Exercise 467
     () {
       List<Map<String, dynamic>> employees = [
         {"name": "John", "age": 30, "department": "Sales", "salary": 5000},
@@ -6374,8 +5976,7 @@ class TechnicalTest {
       return index == 0;
     },
 
-// :::
-    // Exercise 479
+    // Exercise 468
     () {
       List<Map<String, dynamic>> transactions = [
         {"id": 1, "type": "Sale", "amount": 100, "status": "Completed"},
@@ -6394,32 +5995,7 @@ class TechnicalTest {
       return index == 3;
     },
 
-// :::
-    // Exercise 480
-    () {
-      List<Map<String, dynamic>> products = [
-        {"id": 1, "name": "Phone", "price": 500, "stock": 10},
-        {"id": 2, "name": "Laptop", "price": 1200, "stock": 5},
-        {"id": 3, "name": "Headphones", "price": 50, "stock": 20},
-        {"id": 4, "name": "TV", "price": 800, "stock": 15},
-      ];
-      List<Map<String, dynamic>> filteredProducts = [];
-
-      // ? Instruksi: Gunakan looping for untuk mencari product dengan stock kurang dari 10 dan masukkan ke dalam list filteredProducts
-      // >>> Tulis kode for loop di sini
-      for (var item in products) {
-        if (item["stock"] < 10) {
-          filteredProducts.add(item);
-        }
-      }
-      // --- End of Answer ---
-
-      return filteredProducts.isNotEmpty &&
-          filteredProducts[0]["name"] == "Laptop";
-    },
-
-    // :::
-    // Exercise 481
+    // Exercise 469
     () {
       List<Map<String, dynamic>> users = [
         {
@@ -6482,8 +6058,7 @@ class TechnicalTest {
       return subscribedUsers.isNotEmpty && subscribedUsers.first["id"] == 4;
     },
 
-// :::
-    // Exercise 482
+    // Exercise 470
     () {
       List<Map<String, dynamic>> products = [
         {
@@ -6549,8 +6124,7 @@ class TechnicalTest {
           featuredProducts[1]["name"] == "TV";
     },
 
-    // :::
-    // Exercise 483
+    // Exercise 471
     () {
       List<Map<String, dynamic>> employees = [
         {
@@ -6615,71 +6189,7 @@ class TechnicalTest {
       return highPaidEmployees.isNotEmpty && highPaidEmployees.first["id"] == 4;
     },
 
-// :::
-    // Exercise 484
-    () {
-      List<Map<String, dynamic>> products = [
-        {
-          "id": 1,
-          "name": "Phone",
-          "price": 500,
-          "stock": 10,
-          "category": "Electronics",
-          "brand": "Apple",
-          "isAvailable": true,
-          "isFeatured": true,
-          "rating": 4.5,
-          "reviews": 100
-        },
-        {
-          "id": 2,
-          "name": "Laptop",
-          "price": 1200,
-          "stock": 5,
-          "category": "Electronics",
-          "brand": "Dell",
-          "isAvailable": true,
-          "isFeatured": false,
-          "rating": 4.2,
-          "reviews": 50
-        },
-        {
-          "id": 3,
-          "name": "Headphones",
-          "price": 50,
-          "stock": 20,
-          "category": "Electronics",
-          "brand": "Sony",
-          "isAvailable": true,
-          "isFeatured": true,
-          "rating": 4.7,
-          "reviews": 200
-        },
-        {
-          "id": 4,
-          "name": "TV",
-          "price": 800,
-          "stock": 15,
-          "category": "Electronics",
-          "brand": "Samsung",
-          "isAvailable": true,
-          "isFeatured": true,
-          "rating": 4.8,
-          "reviews": 300
-        },
-      ];
-      List<Map<String, dynamic>> lowRatedProducts = [];
-
-      // Instruksi: Gunakan looping for untuk mencari product dengan rating rendah (rating < 4.0),
-      // dan stok produk kurang dari 10 (stock < 10)
-      // Masukkan product yang memenuhi kriteria tersebut ke dalam list lowRatedProducts
-      // >>> Tulis kode for loop di sini
-
-      // --- End of Answer ---
-
-      return lowRatedProducts.length == 0;
-    },
-    // Exercise 485
+    // Exercise 472
     () {
       List<Map<String, dynamic>> employees = [
         {
