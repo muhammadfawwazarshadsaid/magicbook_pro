@@ -1,4 +1,4 @@
-[\[!\[Codemagic build status\](https://api.codemagic.io/apps/65712148e901807b6394628b/65712148e901807b6394628a/status_badge.svg)\](https://codemagic.io/apps/65712148e901807b6394628b/65712148e901807b6394628a/latest_build)
+[\[\\[!\\[Codemagic build status\\](https://api.codemagic.io/apps/65712148e901807b6394628b/65712148e901807b6394628a/status_badge.svg)\\](https://codemagic.io/apps/65712148e901807b6394628b/65712148e901807b6394628a/latest_build)
 
 # Hyper UI
 Hyper UI adalah kumpulan sampel ReuseableWidget Flutter yang bisa kamu gunakan untuk projectmu.
@@ -81,4 +81,4 @@ QLocationPicker
 <img src="https://i.ibb.co/VmWGt9J/3.png" style="width: 240px;"/><br/>
 <hr/>
 
-* snippet update](README.md)
+* snippet update\](README.md)](README.md)

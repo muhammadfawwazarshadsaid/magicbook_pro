@@ -12,13 +12,10 @@ class AuthService {
         "email": email,
         "password": password,
       };
-      printg(data.toString());
-
       // var url = "http://localhost:8000/api/mobile/login";
       var url = "https://9code.id/api/mobile/login";
 
-      printg(url);
-      var response = await Dio().post(
+      await Dio().post(
         url,
         options: Options(
           headers: {
@@ -27,9 +24,35 @@ class AuthService {
         ),
         data: data,
       );
-      printr(response.toString());
     } on Exception catch (err) {
-      print(err);
+      throw Exception(err);
+    }
+  }
+
+  Future<void> updatePoint({
+    required String email,
+    required String password,
+    required int point,
+  }) async {
+    //-----------
+    try {
+      var data = {
+        "email": email,
+        "password": password,
+        "point": point,
+      };
+
+      var url = "https://9code.id/api/mobile/update";
+      await Dio().post(
+        url,
+        options: Options(
+          headers: {
+            "Content-Type": "application/json",
+          },
+        ),
+        data: data,
+      );
+    } on Exception catch (err) {
       throw Exception(err);
     }
   }
