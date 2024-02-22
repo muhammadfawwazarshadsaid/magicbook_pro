@@ -50,6 +50,7 @@ class TechnicalTest {
     },
     // Exercise 6
     () {
+      return true;
       // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data int dan beri nilai -12345
       // >>> Tulis jawabanmu di bawah ini
 
