@@ -14,8 +14,8 @@ class AuthService {
       };
       printg(data.toString());
 
-      var url = "http://localhost:8000/api/mobile/login";
-// var url =  "https://9code.id/api/mobile/login";
+      // var url = "http://localhost:8000/api/mobile/login";
+      var url = "https://9code.id/api/mobile/login";
 
       printg(url);
       var response = await Dio().post(
