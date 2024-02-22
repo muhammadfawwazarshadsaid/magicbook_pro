@@ -1,16 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animate/flutter_animate.dart';
 import 'package:hyper_ui/core.dart';
 import '../controller/profile_controller.dart';
-import '../../../shared/widget/list/list_item.dart';
 
 class ProfileView extends StatefulWidget {
-  ProfileView({Key? key}) : super(key: key);
+  const ProfileView({Key? key}) : super(key: key);
 
   Widget build(context, ProfileController controller) {
     controller.view = this;
-    //CTRL+SHIFT+ALT+.
-
     return Scaffold(
       appBar: AppBar(
         title: const Text("Profile"),

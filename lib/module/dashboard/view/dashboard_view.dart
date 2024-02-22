@@ -1,52 +1,24 @@
+
 import 'package:flutter/material.dart';
 import 'package:hyper_ui/core.dart';
+import '../controller/dashboard_controller.dart';
 
 class DashboardView extends StatefulWidget {
-  DashboardView({Key? key}) : super(key: key);
+  const DashboardView({Key? key}) : super(key: key);
 
   Widget build(context, DashboardController controller) {
-    controller.view = this;
-
+  controller.view = this;
     return Scaffold(
       appBar: AppBar(
-        title: Text("Dashboard"),
-        actions: [
-          Padding(
-            padding: EdgeInsets.all(8.0),
-            child: Center(
-              child: Badge(
-                label: Text(
-                  "6",
-                  style: TextStyle(
-                    color: Colors.white,
-                  ),
-                ),
-                child: Icon(MdiIcons.chatQuestion),
-              ),
-            ),
-          ),
-          Padding(
-            padding: EdgeInsets.all(8.0),
-            child: Center(
-              child: Badge(
-                label: Text(
-                  "3",
-                  style: TextStyle(
-                    color: Colors.white,
-                  ),
-                ),
-                child: Icon(Icons.notifications),
-              ),
-            ),
-          ),
-        ],
-      ),
-      body: SingleChildScrollView(
+        title: const Text("Dashboard"),
+        actions: const [],
+        ),
+        body: SingleChildScrollView(
         child: Container(
-          padding: EdgeInsets.all(10.0),
-          child: Column(
-            children: [],
-          ),
+            padding: const EdgeInsets.all(10.0),
+            child: Column(
+            children: const [],
+            ),
         ),
       ),
     );
@@ -55,3 +27,4 @@ class DashboardView extends StatefulWidget {
   @override
   State<DashboardView> createState() => DashboardController();
 }
+    
