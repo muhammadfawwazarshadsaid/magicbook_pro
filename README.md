@@ -1,37 +1,24 @@
-[![Codemagic build status](https://api.codemagic.io/apps/65712148e901807b6394628b/65712148e901807b6394628a/status_badge.svg)](https://codemagic.io/apps/65712148e901807b6394628b/65712148e901807b6394628a/latest_build)
+*Update Magicbook*
+Dear member, Latihan magicbook sekarang hanya ada di 1 projek ini saja yaa.
+Untuk scores-nya, saya reset lagi jadi 0.
 
-# Hyper UI
-Hyper UI adalah kumpulan sampel ReuseableWidget Flutter yang bisa kamu gunakan untuk projectmu.
-Pada dasar-nya, Hyper UI dibuat dengan tujuan untuk edukasi.
-So, project ini dibuat sesederhana mungkin dan semudah mungkin untuk digunakan.
+Next update, selain technical test,
+Saya juga mau update Magicbook-nya supaya ada kuis seputar pertanyaan2 teknis yang sering ditanyakan Ketika interview. 
 
-## Architecture
-Architecture yang digunakan adalah MVC.
-Dimana state management-nya menggunakan StatefulWidget. 
+Berikut panduan untuk mengerjakannya yaa!
 
-Kami juga mengadopsi fitur contextless di Flutter.
-Dimana, kita akan meng-cache context kita di sebuah variabel.
-Kamu bisa mengakses-nya dimana saja:
-
+---
+1. Clone repo ini:
 ```
-Get.currentContext
+git clone https://github.com/denyocrworld/magicbook_pro
 ```
-
-Mungkin terkait contextless ini masih sangat jarang yang menggunakannya. Padahal dengan menerapkan fitur contextless,
-Kita bisa mengurangi penggunaan context pada Aplikasi kita.
-Dan bisa menghindari keharusan untuk menambahkan BuildContext pada sebuah method.
-
-Contoh:
+2. Ketikkan perintah ini di terminal:
 ```
-onButtonSaveClicK(BuildContext context) {
-    Navigator.push(
-        context,
-        MaterialPageRoute(builder: (context) => DashboardView()),
-    );
-}
+dart pub get
 ```
-
-Kita cukup mengambil context dengan `Get.currentContext`:
+3. Jalankan MagicbookPro di real device android atau windows desktop
+4. Login dengan akun member
+5. Buka file berikut dan kerjakan sesuai instruksi di dalamnya!
 ```
 onButtonSaveClicK() {
     Navigator.push(
