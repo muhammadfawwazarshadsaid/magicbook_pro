@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hyper_ui/core.dart';
+import 'package:hyper_ui/service/db_service/db_service.dart';
 import '../controller/login_controller.dart';
 
 class LoginView extends StatefulWidget {
@@ -67,9 +68,10 @@ class LoginView extends StatefulWidget {
               label: "Email",
               validator: Validator.email,
               suffixIcon: Icons.email,
-              value: null,
+              value: controller.email,
               onChanged: (value) {
                 controller.email = value;
+                DBService.set("email", value);
               },
             ),
             QTextField(
@@ -77,9 +79,10 @@ class LoginView extends StatefulWidget {
               obscure: true,
               validator: Validator.required,
               suffixIcon: Icons.password,
-              value: null,
+              value: controller.password,
               onChanged: (value) {
                 controller.password = value;
+                DBService.set("password", value);
               },
             ),
             QButton(
