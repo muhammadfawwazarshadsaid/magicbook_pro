@@ -147,7 +147,7 @@ class ProfileView extends StatefulWidget {
             ListItem(
               prefixIcon: MdiIcons.logout,
               label: "Logout",
-              onTap: () {},
+              onTap: () => controller.logout(),
             ),
             const SizedBox(
               height: 100.0,
