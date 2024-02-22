@@ -8,6 +8,8 @@ export 'package:hyper_ui/core_package.dart';
 export 'package:hyper_ui/demo.dart';
 export 'package:hyper_ui/module/dashboard/controller/dashboard_controller.dart';
 export 'package:hyper_ui/module/dashboard/view/dashboard_view.dart';
+export 'package:hyper_ui/module/login/controller/login_controller.dart';
+export 'package:hyper_ui/module/login/view/login_view.dart';
 export 'package:hyper_ui/module/main_navigation/controller/main_navigation_controller.dart';
 export 'package:hyper_ui/module/main_navigation/view/main_navigation_view.dart';
 export 'package:hyper_ui/module/profile/controller/profile_controller.dart';

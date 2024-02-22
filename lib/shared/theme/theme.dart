@@ -10,13 +10,14 @@ ThemeData getDefaultTheme() {
     appBarTheme: AppBarTheme(
       elevation: 0.6,
       titleTextStyle: GoogleFonts.ibmPlexSans(
-        color: Color(0xff495057),
-        fontWeight: FontWeight.bold,
+        color: Colors.white,
       ),
-      backgroundColor: Color(0xffffffff),
-      iconTheme: IconThemeData(color: Color(0xff495057)),
-      actionsIconTheme: IconThemeData(
-        color: Color(0xff495057),
+      backgroundColor: primaryColor,
+      iconTheme: const IconThemeData(
+        color: Colors.white,
+      ),
+      actionsIconTheme: const IconThemeData(
+        color: Colors.white,
       ),
     ),
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
@@ -26,6 +27,9 @@ ThemeData getDefaultTheme() {
     tabBarTheme: TabBarTheme(
       unselectedLabelColor: Colors.grey,
       labelColor: Colors.blueGrey[900]!,
+    ),
+    iconTheme: IconThemeData(
+      color: textColor,
     ),
     textTheme: TextTheme(
       titleSmall: GoogleFonts.ibmPlexSans(
@@ -48,7 +52,7 @@ ThemeData getDefaultTheme() {
       ),
     ),
     inputDecorationTheme: InputDecorationTheme(
-      contentPadding: EdgeInsets.symmetric(
+      contentPadding: const EdgeInsets.symmetric(
         horizontal: 20.0,
         vertical: 4.0,
       ),
@@ -62,13 +66,13 @@ ThemeData getDefaultTheme() {
       ),
       enabledBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(8.0),
-        borderSide: BorderSide(
+        borderSide: const BorderSide(
           color: Colors.transparent,
         ),
       ),
       errorBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(8.0),
-        borderSide: BorderSide(
+        borderSide: const BorderSide(
           color: Colors.red,
         ),
       ),
@@ -89,7 +93,7 @@ ThemeData getDefaultTheme() {
     ),
     cardTheme: CardTheme(
       elevation: 0.6,
-      color: Color(0xfff6f6f6),
+      color: const Color(0xfff6f6f6),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(8.0),
         side: BorderSide(
@@ -100,11 +104,10 @@ ThemeData getDefaultTheme() {
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
-        backgroundColor: Colors.blueGrey,
-        foregroundColor: Colors.white,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(8.0),
         ),
+        backgroundColor: Colors.blueGrey,
       ),
     ),
   );

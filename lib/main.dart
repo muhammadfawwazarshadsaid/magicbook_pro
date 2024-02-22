@@ -20,34 +20,13 @@ class MainApp extends StatefulWidget {
 
 class _MainAppState extends State<MainApp> with WidgetsBindingObserver {
   @override
-  void initState() {
-    super.initState();
-    WidgetsBinding.instance.addObserver(this);
-  }
-
-  @override
-  void dispose() {
-    WidgetsBinding.instance.removeObserver(this);
-    super.dispose();
-  }
-
-  @override
-  void didChangeAppLifecycleState(AppLifecycleState state) {
-    if (state == AppLifecycleState.resumed) {
-      // The app is returning to the foreground.
-      // Add your navigation logic here to stay on the same screen.
-      Navigator.of(context).pushReplacementNamed('/profile');
-    }
-  }
-
-  @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Capek Ngoding',
       navigatorKey: Get.navigatorKey,
       debugShowCheckedModeBanner: false,
       theme: getDefaultTheme(),
-      home: MainNavigationView(),
+      home: LoginView(),
       onGenerateRoute: (routeSettings) {
         print(routeSettings.name);
         return null;

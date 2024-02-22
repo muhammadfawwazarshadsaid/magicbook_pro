@@ -1,5 +1,6 @@
 {
     "modules": [
+        "login",
         "dashboard",
         "profile"
     ],

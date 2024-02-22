@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 
-Color primaryColor = Colors.blueGrey[800]!;
+// Color primaryColor = Color(0xff507246);
+Color primaryColor = const Color(0xff1f5a33);
 Color secondaryColor = const Color(0xff6c757d);
 Color disabledColor = const Color(0xff9fa5aa);
-Color textColor = Colors.blueGrey[900]!;
+Color textColor = const Color(0xff464646);
+// Color textColor = Colors.red;
 Color secondaryTextColor = const Color(0xff6c7592);
 Color scaffoldBackgroundColor = Colors.white;
 
@@ -14,5 +16,3 @@ Color dangerColor = const Color(0xffdc3545);
 
 Color inputColor = Colors.grey[300]!;
 double inputHeight = 52;
-
-//-----
