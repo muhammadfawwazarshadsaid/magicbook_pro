@@ -52,4 +52,10 @@ class DashboardController extends State<DashboardView> {
   int point = 0;
 
   Timer? timer;
+
+  int selectedIndex = 0;
+  updateIndex(int newIndex) {
+    selectedIndex = newIndex;
+    setState(() {});
+  }
 }

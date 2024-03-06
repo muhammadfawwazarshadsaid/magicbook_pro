@@ -2,7 +2,8 @@
     "modules": [
         "login",
         "dashboard",
-        "profile"
+        "profile",
+        "under_maintenance"
     ],
     "module_directory_name": "module",
     "experimental_mode": false,

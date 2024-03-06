@@ -142,7 +142,7 @@ class _QCategoryPickerState extends State<QCategoryPicker> {
                             onPressed: () => updateIndex(index),
                             spaceBetween: false,
                             size: xs,
-                            width: 140.0,
+                            width: 200.0,
                           ),
                         );
                       }),
